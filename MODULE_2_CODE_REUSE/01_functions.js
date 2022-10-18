@@ -1,4 +1,5 @@
-// CODE REUSE WITH FUNCTIONS
+// CODE REUSE WITH FUNCTIONS - DRY (Don't Repeat Yourself) - no retyping
+// like a min program inside your program.
 function subtract(a, b) {
     let result = a - b;
     return result;
@@ -12,8 +13,8 @@ function subtract(a, b) {
 //  that can't be seen outside the function.
 // "return" is a reserved key-word that sends back a value to the "caller".
 
-// call a function by name, and pass in two literal values as input arguments
-let output = subtract(100, 10); 
+// call a function by name, and pass in two literal values as input arguments.
+let output = subtract(100, 10); // call/invoke the function
 console.log(output); // print the returned value
 
 //FUNCTIONS DO NOT REQUIRE INPUT VALUES AND NEED NO RETURN A VALUE

@@ -1,28 +1,28 @@
 
-//  REPEAT CODE WITH LOOPS
+//  REPEAT CODE WITH LOOPS - ALSO MORE FLOW-CONTROL/BRANCHING also with conditional logic
 
 //  The Classic For-Loop
 //  THREE PART INITIAL;BOOL;ITERATOR i=i+1
 for (let i = 0; i < 5; i++) { // middle expression is true i = i + 1
-    console.log(i);
+    console.log("i:", i);
 }
 
 // WHILE
 let count = 10;
 
 while (count > 0) { //HOW DO WE KNOW WE ARE DONE - WHEN FALSE, WE STOP
-    console.log(count);
+    console.log("count:", count);
     count--; //count = count - 1
 }
 console.log("blast off!!!")
 
 //LOOPING THROUGH A LIST
-data = ["apples", "oranges", "bananas"]
+fruit = ["apples", "oranges", "bananas"]
 
 //OLD SCHOOL - VERBOSE - LONG WAY
-for (let i = 0; i < data.length; i++) { // middle expression is true i = i + 1
-    console.log(data[i]);
+for (let i = 0; i < fruit.length; i++) { // middle expression is true i = i + 1
+    console.log(`fruit[${i}]:`, fruit[i]);
 }
 
 //FOR EACH - NEW SCHOOL - CONCISE - SHORT WAY
-data.forEach(fruit => console.log(fruit)); // (FAT)ARROW/LAMBDA function
+fruit.forEach(f => console.log("f:", f)); // (FAT)ARROW/LAMBDA function

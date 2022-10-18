@@ -21,3 +21,8 @@ switch (color) {
     case BLUE: console.log("Is RGB"); break;
     default: console.log("Not RGB"); break;
 }
+
+// "?"  and ":" TERNARY (THREE PART) OPERATOR - IF/ELSE all on one line
+wantCoffee = false;
+message = wantCoffee ? "Here is a cup-a-joe" : "Here is some water";
+console.log("message:", message);

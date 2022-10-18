@@ -1,6 +1,9 @@
 
 // OOP (Object Oriented Programming) - Class
 
+//OLD SCHOOL
+let oldItem = { height: 30, width: 20, get_area: (h, w) => h * w };
+console.log("oldItem:", oldItem.get_area(oldItem.height, oldItem.width));
 class Item {
     constructor(height, width) {
         this.height = height; //PROPERTIES AKA ATTRIBUTES
@@ -13,7 +16,7 @@ class Item {
 
 let item = new Item(30, 20);
 
-console.log(item.get_area())
+console.log("item area:", item.get_area())
 
 // DRY - Don't Repeat Yourself.
 
