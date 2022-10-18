@@ -3,6 +3,10 @@ Introduction to JavaScript/EcmaScript (ES6+)
 
 For context visit this link: 
 https://clvrclvr.com/content/?p=181
+
+Get the latest code here: 
+https://github.com/kevinelong/intro_to_javascript
+
 #
 # Introduction to Programming;
 ___
