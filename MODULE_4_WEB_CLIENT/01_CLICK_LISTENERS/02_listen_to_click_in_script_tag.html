@@ -1,0 +1,13 @@
+<script>
+    function show() {
+        window.results.value = 'hello ' + window.username.value;
+    }
+</script>
+
+<body>
+    Enter your name:<br>
+    <input id="username" name="username" value="" placeholder="name">
+    <input onclick="show()" type="button" value="Greet"><br>
+    Results:<br>
+    <input id="results" placeholder="results" readonly>
+</body>

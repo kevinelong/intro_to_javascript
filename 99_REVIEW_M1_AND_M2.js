@@ -13,6 +13,14 @@ const glass = "water" //Indicates it is immutable(can't be changed).
 //Output the contents of the variable name "jar". Using the key-words console.log().
 console.log(jar)
 
+// CORE DATA TYPES
+text = "ABC"    //  STRING (list of letters/characters)
+price = 12.34   //  NUMBER (floating point decimal)
+today = Date()  //  DATE
+
+// ADDITIONAL DATA TYPES
+list = [0, 1, 2]  //  ARRAY (list of values (Any Type); separated by commas)
+dictionary = { first: "Alex", last: "The Great" }  //  Lookup table of key-value-pairs.
 
 // math operators
 console.log(12 + 12)  //  Addition
@@ -42,19 +50,7 @@ has_note_from_parent = true
 is_excused = has_dr_note || has_note_from_parent // LOGICAL OR
 
 
-// SIMPLE DATA TYPES
-let Jar_2 = "apples"; // string - list of characters
-const PI = 3.14159; // floating point decimal (fraction)
-const quantity = 144; //integer - whole numbers
 
-// COMPLEX DATA TYPES
-
-//ARRAY OF STRING
-let list = []; //empty Array AKA List of items
-let fruit = ["apples", "oranges", "pears"]; 
-console.log(fruit[0]); //ACCESS BY INDEX - OFFSET FROM BEGINNING
-console.log(fruit[1]);
-console.log(fruit[2]);
 
 // ANY TYPE CAN BE IN AN ARRAY
 let numbers = [13, 7, 42]; 
@@ -73,21 +69,13 @@ console.log(nina.age); //CONCISE - dot notation
 console.log(kevin["name"]); //VERBOSE - WORDY
 console.log(kevin.name); //CONCISE - simple dot notation
 
-function add_two(a, b){
-  return a + b;
-}
-console.log(add_two(100, 10));
-console.log(add_two("engine", "caboose")) //CONCATENATE STRINGS
-console.log("engine" + "boxcar" + "caboose")
-
+// FLOW-CONTROL/BRANCHING WITH CONDITIONAL LOGIC
 let age = 99;
 const LIMIT = 21;
 const OLD = 50;
 const ANCIENT = 80;
 
-//FLOW CONTROL
-
-//BRANCHES
+// IF/ELSE/ELSE-IF
 if (age >= ANCIENT){
   console.log("Why not?");
 }else if (age >= OLD){
@@ -97,6 +85,7 @@ if (age >= ANCIENT){
 }else{
   console.log("NOT ALLOWED!")
 }
+
 //LOOPS
 //For
 
@@ -122,6 +111,14 @@ data.forEach(fruit => console.log(fruit)); // ARROW/LAMBDA function
 for(let i=0; i < data.length; i++){ // middle expression is true i = i + 1
   console.log(data[i]);
 }
+
+// CODE REUSE WITH FUNCTIONS
+function add_two(a, b){
+  return a + b;
+}
+console.log(add_two(100, 10));
+console.log(add_two("engine", "caboose")) //CONCATENATE STRINGS
+console.log("engine" + "boxcar" + "caboose")
 
 /*
 // OOP (Object Oriented Programming) - Class

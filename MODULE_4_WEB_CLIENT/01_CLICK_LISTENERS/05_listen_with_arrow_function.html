@@ -1,0 +1,14 @@
+<body>
+    Enter your name:<br>
+    <input id="username" name="username" value="" placeholder="name">
+    <input id="greet" type="button" value="Greet"><br>
+    Results:<br>
+    <input id="results" placeholder="results" readonly>
+</body>
+<script>
+    document.getElementById("greet")
+        .addEventListener(
+            "click",
+            e => window.results.value = 'hello ' + window.username.value
+        ); //NOTE ALL ONE STATEMENT/LINE.
+</script>

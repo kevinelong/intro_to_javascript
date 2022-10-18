@@ -1,0 +1,16 @@
+
+
+<body>
+    Enter your name:<br>
+    <input id="username" name="username" value="" placeholder="name">
+    <input id="greet" type="button" value="Greet"><br>
+    Results:<br>
+    <input id="results" placeholder="results" readonly>
+</body>
+
+<script>
+    function show() {
+        window.results.value = 'hello ' + window.username.value;
+    }
+    window.greet.onclick = show;
+</script>
