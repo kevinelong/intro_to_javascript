@@ -1,0 +1,25 @@
+<script>
+    //SCRIPT CAN MOVE TO THE TOP AS ACCESS TO DOM ELEMENTS IN BODY IS DEFERRED.
+    function init() {
+        const results = document.getElementById("results");
+        const username = document.getElementById("username");
+
+        function onClickGreet() {
+            results.value = 'hello ' + username.value;
+        }
+
+        const greet = document.getElementById("greet");
+        greet.addEventListener("click", onClickGreet); //NOTE ALL ONE STATEMENT/LINE.
+    }
+
+    document.addEventListener("DOMContentLoaded", init); //END DOMContentLoaded listener function
+
+</script>
+
+<body>
+    Enter your name:<br>
+    <input id="username" name="username" value="" placeholder="name">
+    <input id="greet" type="button" value="Greet"><br>
+    Results:<br>
+    <input id="results" placeholder="results" readonly>
+</body>
